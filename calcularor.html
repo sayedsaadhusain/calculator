@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="cal.png" type="png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>calculator •SSH</title>
+    <style>
+    button{
+        height: 100%;
+        width: 100%;
+    }
+    #card{
+        box-shadow: 7px 10px;
+        border-radius: 14px;
+    }
+    h1 {
+       border-left-style: solid;
+       border-left-color: #92a8d1;
+    }
+    p::selection{
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+<center>
+    <section class="py-4">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div id="card" class="col-md-3 card py-2 bg-danger">
+                <h1><i class="fa fa-calculator"></i> Calculator •</h1>
+                <table class="table table-primary table-borderless">
+                    <input style="height: 60px; font-family: cambria;" type="text" name="" id="result">
+                    <tr>
+                        <td><button value="1"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('1')">1</button></td>
+                        <td><button value="2"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('2')">2</button></td>
+                        <td><button value="3"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('3')">3</button></td>                        
+                    </tr>
+                    <tr>
+                        <td><button value="4"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('4')">4</button></td>
+                        <td><button value="5"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('5')">5</button></td>
+                        <td><button value="6"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('6')">6</button></td>                        
+                    </tr>
+                    <tr>
+                        <td><button value="7"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('7')">7</button></td>
+                        <td><button value="8"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('8')">8</button></td>
+                        <td><button value="9"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('9')">9</button></td>                        
+                    </tr>
+                    <tr>
+                        <td><button value=""  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="back()">←</button></td>
+                        <td><button value="0"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('0')">0</button></td>
+                        <td><button value="."  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('.')">•</button></td>                        
+                    </tr>
+                    <tr>
+                        <td><button value="+"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('+')">+</button></td>
+                        <td><button value="-"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('-')">-</button></td>
+                        <td><button value="/"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('/')">/</button></td>                        
+                    </tr>
+                    <tr>
+                        <td><button value="*"  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="dis('*')">*</button></td>
+                        <td><button value="="  class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="solve()">=</button></td>
+                        <td><button class="btn btn-primary btn-outline-danger text-light btn-lg" onclick="cle()">C</button></td>                        
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </section>
+    <p>saad husain</p>
+</center>
+    <script src="cal.js"></script>
+</body>
+</html>
